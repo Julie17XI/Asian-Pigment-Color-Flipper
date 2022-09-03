@@ -38,7 +38,6 @@ const traditionalColorPair = [
     ["Grey dove", "#482936"],
     ["Grey agate", "#CFCCC9"],
     ["Green Wave", "#248067"],
-
     ["Haystack", "#D2B42C"],
     ["Hazelnut Purple ", "5A191B"],
     ["Indigo Blue", "#1661AB"],
@@ -98,8 +97,6 @@ const traditionalColorPair = [
 const btn = document.getElementById("btn");
 const color = document.querySelector(".color");
 
-console.log(traditionalColorPair);
-
 btn.addEventListener('click', function() {
     const randomNumber = getRandomNumber();
     console.log(randomNumber);
@@ -107,6 +104,6 @@ btn.addEventListener('click', function() {
     color.textContent = traditionalColorPair[randomNumber][0];
 });
 
-function getRandomNumber(){
+const getRandomNumber = () => {
     return Math.floor(Math.random() * traditionalColorPair.length);
 }

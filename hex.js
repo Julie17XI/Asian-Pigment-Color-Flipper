@@ -10,7 +10,7 @@ btn.addEventListener('click', function() {
     color.textContent = colorNumber;
 });
 
-function getRandomColor(){
+const getRandomColor = () => {
     let hexString = "#";
     let randNumber;
     for (let i = 0; i < 6; i++){
@@ -19,6 +19,6 @@ function getRandomColor(){
     }
     return hexString;
 }
-function getRandomNumber(){
+const getRandomNumber = () => {
     return Math.floor(Math.random() * hex.length);
 }
